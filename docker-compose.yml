@@ -1,3 +1,5 @@
+version: "3.8"
+
 services:
   docs:
     build:
@@ -6,7 +8,7 @@ services:
     image: vuetify-docs:latest
     restart: unless-stopped
     ports:
-      -"8095:80"
+      - "8095:80"
     networks:
       macvlan_net:
         ipv4_address: 10.220.0.101
