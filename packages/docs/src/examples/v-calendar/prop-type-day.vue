@@ -1,0 +1,12 @@
+<template>
+  <v-row>
+    <v-col>
+      <v-sheet>
+        <v-calendar
+          color="primary"
+          view-mode="day"
+        ></v-calendar>
+      </v-sheet>
+    </v-col>
+  </v-row>
+</template>
