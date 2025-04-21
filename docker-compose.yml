@@ -1,12 +1,12 @@
 services:
   docs:
     build:
-      context: https://github.com/DEIN_USER/vuetify-docs.git#main
+      context: https://github.com/jonas99-pixel/vuetify-docs.git
       dockerfile: Dockerfile
     image: vuetify-docs:latest
     restart: unless-stopped
     ports:
-      - "${PORT:-8095}:80"
+      -"8095:80"
     networks:
       macvlan_net:
         ipv4_address: 10.220.0.101
